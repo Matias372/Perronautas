@@ -1,8 +1,8 @@
-# React + Vite
+El proyecto es sobre un emprendimiento de un familiar, se uso la paleta de colores que usa en sus publicaciones.
+Es un Servicio de adiestramiento canino que realiza la persona.
+Despues de todo este tiempo aun espero los detalles finales XD. Se genero con texto generico sobre el tema.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Se separo en clases y cursos por solicitud del "cliente" y se coloco los cursos de esa forma por solicitud del cliente.
+- IMPORTANTE: se agrego un detalle extra en Nosotros.html, 6 click en el icono de la patita y te lleva a otro sitio. (extra mio mientras programaba)
+- El formulario no realiza accion, una vez completo solo redirige a Registrado.html.
+- Se uso JS para insertar header y footer en los html.

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perronautas - inscripción</title>
+    <meta name="author" content="Matias Ruibal">
+    <meta name="github" content="https://github.com/Matias372">
+    <meta name="description" content="Completa el formulario de inscripción para los cursos de adiestramiento canino de Perronautas. Proporciona tus datos y los de tu perro para empezar a mejorar la comunicación y el comportamiento de tu mascota con la ayuda de nuestros expertos.">
+    <meta name="keywords" content="formulario de inscripción, adiestramiento canino, registro de curso, inscripción en cursos, Perronautas inscripción">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../CSS/General_Style.css">
+</head>
+<body id="Template-Inscribirse">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div id="loading-dog"></div>
+        <div id="loading-floor"></div>
+    </div>
+    
+    <div id="Header"></div>
+
+    <main>
+
+        <section id="Inscribirse"> <!--actualmente redirige directo a Registrado.html, no guarda datos.-->
+
+            <h1>Formulario</h1>
+            <!-- Formulario de inscripción -->
+            <form method="post" id="inscripcion-form" onsubmit="sendEmail(event)">
+
+                <div>
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" required>    
+                </div>
+                <div>
+                    <label for="apellido">Apellido *</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div>
+                    <label for="mail">Mail *</label>
+                    <input type="email" id="mail" name="mail" required>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required>    
+                </div>
+                <!-- Select de cursos, implementar DB -->
+                <div>
+                    <label for="curso">Curso *</label>
+                    <select name="curso" id="cursoname" required>
+                        <option value="" disabled selected>Selecciona curso</option>
+                        <option value="nombre_de_curso">Nombre de curso</option>
+                    </select>    
+                </div>
+                <div>
+                    <label for="mascota">Nombre de perro</label>
+                    <input type="text" id="mascota" name="mascota">    
+                </div>
+                <div>
+                    <label for="fca">Nombre de criadero</label>
+                    <input type="text" id="fca" name="fca">    
+                </div>
+                <div>
+                    <label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"></textarea>    
+                </div>
+                <button type="submit">Enviar formulario</button>
+                
+            </form>
+        </section>
+
+    </main>
+    
+    <div id="Footer"></div>
+    <!--scripts-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="../../Control/HeaFoo_Handler.js"></script>
+    <script src="../../Control/Formulario_Handler.js"></script>
+    <script src="../../Control/LoadingScreen_Handler.js"></script>
+</body>
+</html>

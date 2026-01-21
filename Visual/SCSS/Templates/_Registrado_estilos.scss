@@ -1,0 +1,53 @@
+#Template-Registrado {
+    @include body-set();
+    line-height: 1.6;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; // Asegura que el body ocupe al menos toda la altura de la ventana
+    
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin-top: 10px;
+        flex: 1; // Permite que main ocupe el espacio disponible
+    }
+
+    main img {
+        width: 400px;
+        margin-bottom: 20px;
+        background-color: #597766;
+    }
+
+    main h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    main p {
+        font-size: 1.2em;
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    main a {
+        @include button-style(#007BFF, #fff);
+    }
+
+    /* Ajustes para pantallas pequeñas */
+    @media (max-width: 768px) {
+        main h1 {
+            font-size: 1.9em;
+        }
+
+        main img {
+            width: 100%;
+        }
+    }
+}

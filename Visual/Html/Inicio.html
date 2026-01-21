@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perronautas</title>
+    <meta name="author" content="Matias Ruibal">
+    <meta name="github" content="https://github.com/Matias372">
+    <meta name="description" content="Perronautas es tu destino para un adiestramiento canino efectivo. Descubre nuestros cursos y servicios para mejorar la comunicación y el comportamiento de tu perro. Conoce al equipo de expertos y accede a recursos útiles para el adiestramiento de mascotas.">
+    <meta name="keywords" content="Perronautas, adiestramiento, adiestramiento canino, entrenamiento de perros, cursos de adiestramiento canino, adiestramiento de mascotas, adiestrador canino profesional, comportamiento canino, adiestramiento perros presencial, adiestramiento perros remoto, modificación de conducta en perros, cursos de entrenamiento para perros">
+
+    <!-- Estilos -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/General_Style.css">
+    
+</head>
+<body id="Template-Inicio">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div id="loading-dog"></div>
+        <div id="loading-floor"></div>
+    </div>
+    <!-- contenedor donde se carga el header-->
+    <div id="Header"></div>
+    
+
+    <main class="main text-center">
+        <!-- Slider -->
+        <div id="slider" class="slider">
+            <img id="sliderImage" class="slider__image" src="" alt="Slider Image" loading="lazy"> <!--slider, cambia imagen con JS-->
+        </div>
+
+        <!-- contenedor de Servicios -->
+        <section id="Servicios" class="services row justify-content-around">
+            <div id="Clases" class="services__item services__item--classes col-md-5 p-3"> <!-- cold-md-5: para que separe en 2 columnas cuando es pantalla mediana o mayor, p-3: padding -->
+                <h2 class="services__title">Clases</h2>
+                <p class="services__description">En nuestras <strong>Clases</strong>, te ofrecemos una experiencia personalizada en adiestramiento canino. Puedes elegir entre clases presenciales o sesiones en vivo por Zoom, donde nuestro experto te guiará paso a paso. Estas clases están diseñadas para resolver problemas específicos de comportamiento de tu perro, enseñar nuevas habilidades o simplemente mejorar su obediencia general. Trabajaremos juntos para asegurar que tanto tú como tu perro obtengan los mejores resultados en un entorno interactivo y de apoyo.</p>
+                <a href="Clases.html" class="services__link btn btn-primary">Ver</a>
+            </div>
+    
+            <div id="Cursos" class="services__item services__item--courses col-md-5 p-3">
+                <h2 class="services__title">Cursos</h2>
+                <p class="services__description">Nuestros <strong>Cursos</strong> están diseñados para aquellos que buscan una formación más completa y estructurada en adiestramiento canino. Ofrecemos cursos pregrabados que puedes seguir a tu propio ritmo, así como sesiones en vivo por Zoom donde puedes interactuar con el instructor y otros participantes. Cada curso sigue un programa detallado que cubre una amplia gama de temas, desde habilidades básicas hasta técnicas avanzadas de adiestramiento. Ideal para grupos de personas interesadas en mejorar sus conocimientos y habilidades en el adiestramiento canino.</p>
+                <a href="Cursos.html" class="services__link btn btn-primary">Ver</a>
+            </div>
+        </section>
+
+        <!-- Contactar por whatsapp -->
+        <div id="Btn-Contactanos" class="contact-button">
+            <a id="whatsapp" class="contact-button__link" href="https://web.whatsapp.com" target="_blank">
+                <img src="../../Resources/Img/Icons/Whatsapp-icon.svg" alt="whatsapp" width="32" class="contact-button__icon">Contactanos
+            </a>
+        </div>
+    </main>
+    <!-- contenedor donde se carga Footer -->
+    <div id="Footer"></div>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../Control/HeaFoo_Handler.js" defer></script> <!--agrega header y footer-->
+    <script src="../../Control/Slider.js" defer></script>
+    <script src="../../Control/LoadingScreen_Handler.js" defer></script>
+</body>
+</html>
